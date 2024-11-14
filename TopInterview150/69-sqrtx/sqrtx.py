@@ -1,6 +1,11 @@
-import math
 
 class Solution(object):
     def mySqrt(self, x):
-        return int(math.sqrt(x))
+        i=0
+        while True:
+            if i*i == x:
+                return i
+            if i*i > x:
+                return i-1
+            i+=1
         
